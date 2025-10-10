@@ -1,7 +1,7 @@
-package de.one_piece_api.items;
+package de.one_piece_api.item;
 
-import de.one_piece_api.events.EventRegistry;
-import de.one_piece_api.registries.MyDataComponentTypes;
+import de.one_piece_api.event.EventRegistry;
+import de.one_piece_api.init.MyDataComponentTypes;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
@@ -53,7 +53,7 @@ public class DevilFruitItem extends Item {
     public ItemStack finishUsing(ItemStack stack, World world, LivingEntity user) {
         if (user instanceof ServerPlayerEntity player) {
             Identifier id = stack.getOrDefault(MyDataComponentTypes.DEVIL_FRUIT, DEFAULT_DEVIL_FRUIT);
-            EventRegistry.fireDevilFruitEaten(player, id);
+            EventRegistry.DEVIL_FRUIT_EATEN.invoker().onDevilFruitEaten(player, id);
         }
         return stack;
     }

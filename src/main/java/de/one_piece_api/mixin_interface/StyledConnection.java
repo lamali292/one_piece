@@ -1,4 +1,4 @@
-package de.one_piece_api.interfaces;
+package de.one_piece_api.mixin_interface;
 
 import net.minecraft.util.Identifier;
 

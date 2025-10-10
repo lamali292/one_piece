@@ -1,8 +1,7 @@
-package de.one_piece_api.registries;
+package de.one_piece_api.init;
 
-import de.one_piece_api.network.*;
+import de.one_piece_api.network.payload.*;
 import net.fabricmc.fabric.api.networking.v1.PayloadTypeRegistry;
-import net.minecraft.network.packet.CustomPayload;
 
 public class MyPayloads {
     public static void register() {

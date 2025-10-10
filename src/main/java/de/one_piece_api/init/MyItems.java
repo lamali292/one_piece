@@ -1,7 +1,7 @@
-package de.one_piece_api.registries;
+package de.one_piece_api.init;
 
 import de.one_piece_api.OnePieceRPG;
-import de.one_piece_api.items.DevilFruitItem;
+import de.one_piece_api.item.DevilFruitItem;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.component.DataComponentTypes;
 import net.minecraft.component.type.LoreComponent;

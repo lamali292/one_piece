@@ -1,4 +1,4 @@
-package de.one_piece_api.registries;
+package de.one_piece_api.init;
 
 import de.one_piece_api.OnePieceRPG;
 import net.minecraft.component.ComponentType;

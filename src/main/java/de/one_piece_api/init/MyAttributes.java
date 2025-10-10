@@ -1,11 +1,7 @@
-package de.one_piece_api.registries;
+package de.one_piece_api.init;
 
 import de.one_piece_api.OnePieceRPG;
-import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
-import net.minecraft.entity.EntityType;
-import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.attribute.ClampedEntityAttribute;
-import net.minecraft.entity.attribute.DefaultAttributeContainer;
 import net.minecraft.entity.attribute.EntityAttribute;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
@@ -24,10 +20,30 @@ public class MyAttributes {
             ).setTracked(true)
     );
 
-    public static final RegistryEntry<EntityAttribute> STAMINA_REGEN = register(
-            "stamina_regen",
+    public static final RegistryEntry<EntityAttribute> STAMINA_BASE_REGEN = register(
+            "stamina_base_regen",
             new ClampedEntityAttribute(
-                    "player."+OnePieceRPG.MOD_ID+"stamina_regen",
+                    "player."+OnePieceRPG.MOD_ID+"stamina_base_regen",
+                    1.0,
+                    0.0,
+                    1024.0
+            ).setTracked(true)
+    );
+
+    public static final RegistryEntry<EntityAttribute> STAMINA_CROUCH_ADD = register(
+            "stamina_crouch_add",
+            new ClampedEntityAttribute(
+                    "player."+OnePieceRPG.MOD_ID+"stamina_crouch_add",
+                    0.0,
+                    0.0,
+                    1024.0
+            ).setTracked(true)
+    );
+
+    public static final RegistryEntry<EntityAttribute> STAMINA_CROUCH_MULT = register(
+            "stamina_crouch_mult",
+            new ClampedEntityAttribute(
+                    "player."+OnePieceRPG.MOD_ID+"stamina_crouch_mult",
                     1.0,
                     0.0,
                     1024.0

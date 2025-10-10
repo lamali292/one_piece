@@ -1,4 +1,4 @@
-package de.one_piece_api.util;
+package de.one_piece_api.util.reactive;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,7 +1,8 @@
-package de.one_piece_api.network;
+package de.one_piece_api.network.payload;
 
 import de.one_piece_api.OnePieceRPG;
 import de.one_piece_api.config.ClassConfig;
+import de.one_piece_api.network.MyCodecs;
 import net.minecraft.network.PacketByteBuf;
 import net.minecraft.network.codec.PacketCodec;
 import net.minecraft.network.packet.CustomPayload;

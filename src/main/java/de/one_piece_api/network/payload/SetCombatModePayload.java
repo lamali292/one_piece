@@ -1,4 +1,4 @@
-package de.one_piece_api.network;
+package de.one_piece_api.network.payload;
 
 import de.one_piece_api.OnePieceRPG;
 import net.minecraft.network.PacketByteBuf;
